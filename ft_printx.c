@@ -6,7 +6,7 @@
 /*   By: isaridas <isaridas@student.42istanbul.com  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 13:14:14 by isaridas          #+#    #+#             */
-/*   Updated: 2022/11/21 20:19:28 by isaridas         ###   ########.fr       */
+/*   Updated: 2022/11/21 22:37:22 by isaridas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ static int	ft_hexlen(unsigned int n)
 	return (i);
 }
 
-void	ft_putx(unsigned int n, const char format)
+static void	ft_putx(unsigned int n, const char format)
 {
 	if (n >= 16)
 	{
@@ -38,7 +38,7 @@ void	ft_putx(unsigned int n, const char format)
 			ft_printc(n + '0');
 		else
 		{
-			if (format == 'x' || format == 'p')
+			if (format == 'x')
 				ft_printc(n - 10 + 'a');
 			else if (format == 'X')
 				ft_printc(n - 10 + 'A');
@@ -48,10 +48,12 @@ void	ft_putx(unsigned int n, const char format)
 
 int	ft_printx(unsigned int n, const char format)
 {
-	write(1, "0x", 2);
+	int	numofp;
+
+	numofp = 0;
 	if (!n)
 		return (write(1, "0", 1));
 	else
 		ft_putx(n, format);
-	return (ft_hexlen(n) + 2);
+	return (ft_hexlen(n) + numofp);
 }

@@ -6,7 +6,7 @@
 /*   By: isaridas <isaridas@student.42istanbul.com  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 17:16:46 by isaridas          #+#    #+#             */
-/*   Updated: 2022/11/21 20:23:20 by isaridas         ###   ########.fr       */
+/*   Updated: 2022/11/21 22:28:17 by isaridas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static int	ft_formats(va_list args, const char format)
 	else if (format == 's')
 		print_length += ft_prints(va_arg(args, char *));
 	else if (format == 'p')
-		print_length += ft_printx(va_arg(args, unsigned int), format);
+		print_length += ft_printp(va_arg(args, unsigned int));
 	else if (format == 'd' || format == 'i')
 		print_length += ft_printd(va_arg(args, int));
 	else if (format == 'u')

@@ -6,7 +6,7 @@
 /*   By: isaridas <isaridas@student.42istanbul.com  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 17:03:55 by isaridas          #+#    #+#             */
-/*   Updated: 2022/11/19 13:35:59 by isaridas         ###   ########.fr       */
+/*   Updated: 2022/11/21 22:52:25 by isaridas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdarg.h>
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdint.h>
 
 int	ft_printf(const char *format, ...);
 int	ft_printc(int c);
@@ -23,5 +24,6 @@ int	ft_printd(int d);
 int	ft_prints(char *str);
 int	ft_printu(unsigned int n);
 int	ft_printx(unsigned int n, const char format);
+int	ft_printp(unsigned int n);
 
 #endif

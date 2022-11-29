@@ -1,4 +1,18 @@
-SRCS			=	ft_printf.c ft_printc.c ft_prints.c ft_printd.c ft_printu.c ft_printx.c \
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: isaridas <isaridas@student.42istanbul.com  +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/11/21 22:47:07 by isaridas          #+#    #+#              #
+#    Updated: 2022/11/21 22:47:10 by isaridas         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+SRCS			=	ft_printf.c ft_printc.c ft_prints.c \
+				ft_printd.c ft_printu.c ft_printx.c \
+				ft_printp.c \
 
 OBJS			= $(SRCS:.c=.o)
 
