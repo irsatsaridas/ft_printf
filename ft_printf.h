@@ -6,7 +6,7 @@
 /*   By: isaridas <isaridas@student.42istanbul.com  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 17:03:55 by isaridas          #+#    #+#             */
-/*   Updated: 2022/11/21 22:52:25 by isaridas         ###   ########.fr       */
+/*   Updated: 2022/11/29 14:36:33 by isaridas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ int	ft_printd(int d);
 int	ft_prints(char *str);
 int	ft_printu(unsigned int n);
 int	ft_printx(unsigned int n, const char format);
-int	ft_printp(unsigned int n);
+int	ft_printp(unsigned long long n);
 
 #endif
